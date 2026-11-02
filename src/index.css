@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-scale: 1;
+  --bg-color: #FAF9F6;
+  --text-primary: #24212D;
+}
+
+html {
+  font-size: calc(16px * var(--font-scale, 1));
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #FAF9F6;
+  color: #24212D;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessible High Contrast Mode */
+.high-contrast {
+  --bg-color: #0c0a10 !important;
+  --text-primary: #ffffff !important;
+  background-color: #0c0a10 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast * {
+  border-color: #FFC857 !important;
+}
+
+.high-contrast .bg-white,
+.high-contrast .bg-brand-warmWhite,
+.high-contrast .bg-slate-50,
+.high-contrast .bg-gray-50 {
+  background-color: #15131c !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-gray-500,
+.high-contrast .text-gray-600,
+.high-contrast .text-slate-500,
+.high-contrast .text-slate-600 {
+  color: #e2e8f0 !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+  outline: 2px solid #FFC857 !important;
+  outline-offset: 2px;
+}
+
+/* Reduced Motion Mode */
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* Custom glassmorphism utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.glass-panel-dark {
+  background: rgba(36, 33, 45, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f0ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5bfda;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7956E8;
+}
+
+/* Focus styles for keyboard navigation accessibility */
+*:focus-visible {
+  outline: 3px solid #7956E8;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Flash alert animation for visual cues */
+@keyframes screenFlash {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(255, 139, 112, 0.4); }
+}
+
+.screen-flash-active {
+  animation: screenFlash 0.5s ease-in-out 3;
+}

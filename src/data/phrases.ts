@@ -1,0 +1,156 @@
+import type { EnvironmentInfo } from '../types';
+
+export const ENVIRONMENTS_DATA: Record<string, EnvironmentInfo> = {
+  hospital: {
+    id: 'hospital',
+    title: 'Hospital & Healthcare',
+    subtitle: 'Consultations, emergency ward, triage & pharmacies',
+    iconName: 'HeartPulse',
+    color: '#FF8B70',
+    bgColor: 'bg-rose-50',
+    borderColor: 'border-rose-200',
+    quickPhrases: [
+      'I am Deaf / Hard of Hearing, please face me and write down instructions.',
+      'Where is the Radiology and X-Ray department?',
+      'I am feeling severe chest and stomach pain.',
+      'How many times a day should I take this medicine?',
+      'Please call an emergency sign language interpreter.',
+      'I need a wheelchair or physical mobility escort.',
+      'Where is the blood test laboratory counter?',
+    ],
+    commonQuestions: [
+      {
+        q: 'Do you have your medical insurance card or appointment slip?',
+        a: 'Yes, here is my physical document and government identification.',
+        signKey: 'id-card',
+      },
+      {
+        q: 'Are you currently experiencing any known allergies to penicillin or drugs?',
+        a: 'No known drug allergies. Please see my medical emergency pass.',
+        signKey: 'allergies',
+      },
+      {
+        q: 'Please wait in Room 4B; the physician will call you shortly.',
+        a: 'Understood. Please flash the room light or tap my shoulder when it is my turn.',
+        signKey: 'wait-room',
+      },
+    ],
+  },
+  railway: {
+    id: 'railway',
+    title: 'Railway & Transit Hubs',
+    subtitle: 'Ticketing, platform departures, luggage & accessible coaches',
+    iconName: 'Train',
+    color: '#7956E8',
+    bgColor: 'bg-purple-50',
+    borderColor: 'border-purple-200',
+    quickPhrases: [
+      'Which platform does the 12:45 Express train depart from?',
+      'Has the train departure been delayed or platform changed?',
+      'I need to book a ticket in the designated disabled coach.',
+      'Where is the luggage cloakroom and lost baggage desk?',
+      'Is there an accessible elevator to Platform 4?',
+      'Please write down the platform announcement on paper or my screen.',
+      'Where is the station master office?',
+    ],
+    commonQuestions: [
+      {
+        q: 'Show me your PNR number or booking SMS.',
+        a: 'Here is my ticket reservation slip with PNR 4829104.',
+        signKey: 'ticket',
+      },
+      {
+        q: 'Platform 3 has been changed to Platform 5 due to maintenance.',
+        a: 'Thank you for writing that down. How do I reach Platform 5 by ramp?',
+        signKey: 'platform',
+      },
+    ],
+  },
+  college: {
+    id: 'college',
+    title: 'Colleges & Universities',
+    subtitle: 'Lectures, admissions, registrar office, library & labs',
+    iconName: 'GraduationCap',
+    color: '#55C9B5',
+    bgColor: 'bg-emerald-50',
+    borderColor: 'border-emerald-200',
+    quickPhrases: [
+      'I am attending Lecture Hall 302, where is the front accessible seat?',
+      'I need lecture transcript notes or real-time speech captioning.',
+      'Where is the Registrar and Examination Fee counter?',
+      'Can you provide digital lecture slides before tomorrow class?',
+      'I need an academic sign language interpreter for semester exams.',
+      'Where is the Science laboratory and research wing?',
+    ],
+    commonQuestions: [
+      {
+        q: 'Have you registered your semester accessibility accommodations form?',
+        a: 'Yes, my student accommodation profile was approved last semester.',
+        signKey: 'student-id',
+      },
+      {
+        q: 'The professor has uploaded the audio transcription notes to the student portal.',
+        a: 'Thank you. I will download the PDF lecture slides.',
+        signKey: 'notes',
+      },
+    ],
+  },
+  bank: {
+    id: 'bank',
+    title: 'Banks & Financial Desks',
+    subtitle: 'Cash deposit, KYC verification, card issues & loan officers',
+    iconName: 'Landmark',
+    color: '#FFC857',
+    bgColor: 'bg-amber-50',
+    borderColor: 'border-amber-200',
+    quickPhrases: [
+      'I want to complete my biometrics KYC verification.',
+      'My debit card was blocked, I need to unblock it.',
+      'Please write the exact withdrawal amount and fees.',
+      'I need to update my registered phone number and signature.',
+      'Where is the loan manager desk?',
+      'Please hand me a cash withdrawal slip.',
+    ],
+    commonQuestions: [
+      {
+        q: 'Please enter your 4-digit PIN on this secure POS terminal keypad.',
+        a: 'Entered. Please confirm receipt on screen.',
+        signKey: 'pin',
+      },
+      {
+        q: 'We need your original photo ID and Aadhaar / SSN card for KYC verification.',
+        a: 'Here is my government identity card and passport size photograph.',
+        signKey: 'id-doc',
+      },
+    ],
+  },
+  government: {
+    id: 'government',
+    title: 'Government & Civic Offices',
+    subtitle: 'Pension, municipal services, disability certificates & voter ID',
+    iconName: 'Building2',
+    color: '#7956E8',
+    bgColor: 'bg-indigo-50',
+    borderColor: 'border-indigo-200',
+    quickPhrases: [
+      'I am here to renew my Unique Disability ID (UDID) card.',
+      'Where is Counter 7 for municipal birth and death registrations?',
+      'I need an official seal and stamp on this affidavit application.',
+      'Can you write down the list of pending documents needed?',
+      'Who is the grievance officer in charge today?',
+      'I need an accessible token number with visual screen notification.',
+    ],
+    commonQuestions: [
+      {
+        q: 'Do you have two self-attested passport copies and address proof?',
+        a: 'Yes, all certified photocopies are attached in this folder.',
+        signKey: 'docs',
+      },
+      {
+        q: 'Your certificate will be ready in 7 working days via SMS tracking.',
+        a: 'Please make sure the status is sent via SMS message, not phone call.',
+        signKey: 'sms',
+      },
+    ],
+  },
+};

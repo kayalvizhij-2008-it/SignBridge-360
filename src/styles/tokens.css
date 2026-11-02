@@ -1,0 +1,72 @@
+/**
+ * SignBridge 360 Design Tokens
+ * Conforming to WCAG 2.2 AAA Guidelines & NHS / GOV.UK Accessibility Standards
+ */
+
+:root {
+  /* Core Color Tokens */
+  --color-ink: #1F1B2E;         /* Primary text on canvas */
+  --color-canvas: #FBF8F3;      /* Primary page background */
+  --color-violet-600: #6D3FD6;  /* Primary brand interactive */
+  --color-violet-500: #7956E8;  /* Vibrant accent */
+  --color-violet-100: #EDE6FB;  /* Light violet container */
+  --color-coral-400: #FF7A6B;   /* Decorative accent (never sole indicator) */
+  --color-alert-600: #C62F3B;   /* EMERGENCY ONLY */
+  --color-mint-300: #8FE3C0;    /* Fill with ink text only */
+  --color-sun-300: #FFD56A;     /* Fill with ink text only / Focus offset */
+
+  /* Sizing & Touch Targets */
+  --target-min: 48px;
+  --target-kiosk: 72px;
+  --target-emergency: 96px;
+  --gap-standard: 16px;
+  --radius-card: 24px;
+  --radius-button: 18px;
+
+  /* Focus Indicator Ring (3px ink + 2px sun-300 offset) */
+  --focus-ring: 0 0 0 2px var(--color-sun-300), 0 0 0 5px var(--color-ink);
+
+  /* Typography */
+  --font-base-size: 18px;
+  --font-kiosk-size: 22px;
+  --line-height-base: 1.6;
+  --measure-max: 65ch;
+}
+
+/* High Contrast Mode Tokens */
+.high-contrast {
+  --color-ink: #FFFFFF;
+  --color-canvas: #0C0A10;
+  --color-violet-600: #FFD56A;
+  --color-violet-100: #1F1B2E;
+  --color-coral-400: #FF8B70;
+  --color-alert-600: #FF4A5A;
+  --color-mint-300: #8FE3C0;
+  --color-sun-300: #FFD56A;
+  --focus-ring: 0 0 0 3px #FFFFFF, 0 0 0 6px #FFD56A;
+}
+
+/* Focus Utility Class */
+.a11y-focus {
+  outline: none;
+}
+.a11y-focus:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-button);
+}
+
+/* Kiosk Sizing Mode */
+.kiosk-mode {
+  font-size: var(--font-kiosk-size) !important;
+}
+.kiosk-mode button,
+.kiosk-mode a,
+.kiosk-mode input,
+.kiosk-mode select {
+  min-height: var(--target-kiosk) !important;
+  font-size: 1.15rem !important;
+}
+.kiosk-mode .emergency-action-btn {
+  min-height: var(--target-emergency) !important;
+}

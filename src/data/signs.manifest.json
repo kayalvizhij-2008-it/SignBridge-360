@@ -1,0 +1,206 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SignBridge 360 Validated Signs Manifest",
+  "description": "Registry of validated sign recordings, handshape metadata, and dialect variants. Real validated video clips replace placeholders in production.",
+  "version": "1.0.0",
+  "signs": [
+    {
+      "id": "sign-hello",
+      "sign": "Hello / Welcome",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Open flat palm facing outward waving gently from right temple level.",
+          "handshape": "B-hand open palm",
+          "movement": "Side-to-side gentle sweep",
+          "expression": "Warm smile, direct eye contact"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Flat hand to temple, moving outward into a salute gesture.",
+          "handshape": "Open 5 hand",
+          "movement": "Forward arc from forehead",
+          "expression": "Friendly acknowledging nod"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Open palm waving towards receiver.",
+          "handshape": "Flat open hand",
+          "movement": "Single wave",
+          "expression": "Warm welcoming smile"
+        }
+      }
+    },
+    {
+      "id": "sign-thankyou",
+      "sign": "Thank You",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Fingertips touch chin, hand moves forward and slightly downward.",
+          "handshape": "Flat hand with thumb relaxed",
+          "movement": "Chin outward arc",
+          "expression": "Appreciative smile"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Fingertips of dominant hand touch chin/lips, then extend toward person.",
+          "handshape": "Flat B hand",
+          "movement": "Forward extension",
+          "expression": "Gratitude expression"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Tips of flat hand touch lips and move forward.",
+          "handshape": "Flat hand",
+          "movement": "Forward gesture from mouth",
+          "expression": "Nod of thanks"
+        }
+      }
+    },
+    {
+      "id": "sign-doctor",
+      "sign": "Doctor / Physician",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Dominant bent index/middle fingertips tap inside wrist pulse of non-dominant hand.",
+          "handshape": "Bent V hand",
+          "movement": "Double tap on radial wrist pulse",
+          "expression": "Focused, inquiring brow"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Fingertips of curved 'M' or 'D' hand tap the radial pulse of non-dominant wrist.",
+          "handshape": "Bent hand tapping pulse",
+          "movement": "Pulse tap",
+          "expression": "Neutral or urgent depending on medical need"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Two fingers tap the pulse at the wrist.",
+          "handshape": "V hand tapping wrist",
+          "movement": "Two taps",
+          "expression": "Inquiring expression"
+        }
+      }
+    },
+    {
+      "id": "sign-help",
+      "sign": "Need Help",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Closed fist on flat palm lifted upward together.",
+          "handshape": "A-fist on flat B-palm",
+          "movement": "Upward lift",
+          "expression": "Urgent assistance brow"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Thumbs-up 'A' hand on flat non-dominant palm, moving upward together.",
+          "handshape": "A hand on flat palm",
+          "movement": "Joint upward lift",
+          "expression": "Earnest appeal"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Non-dominant palm facing up, dominant closed fist rests on it and lifts.",
+          "handshape": "Fist on palm",
+          "movement": "Upward movement",
+          "expression": "Urgent focus"
+        }
+      }
+    },
+    {
+      "id": "sign-pain",
+      "sign": "Pain / Hurt",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Extended index fingers point toward each other and twist sharply near pain locus.",
+          "handshape": "Dual index points",
+          "movement": "Twisting convergence",
+          "expression": "Grimace / discomfort"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Both index fingers point toward each other and twist repeatedly.",
+          "handshape": "1 hands converging",
+          "movement": "Counter-twisting",
+          "expression": "Pain grimace"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Fingers flick outward sharply near location of distress.",
+          "handshape": "Flicking fingers",
+          "movement": "Sharp outward flick",
+          "expression": "Pained squint"
+        }
+      }
+    },
+    {
+      "id": "sign-deaf",
+      "sign": "Deaf / Hard of Hearing",
+      "dialects": {
+        "ISL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Index finger touches ear then mouth (cultural Deaf identity sign).",
+          "handshape": "Index finger point",
+          "movement": "Ear to mouth touch",
+          "expression": "Affirmative, clear"
+        },
+        "ASL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Index finger touches jaw near ear, then touches jaw near corner of mouth.",
+          "handshape": "1 hand",
+          "movement": "Ear to mouth touch",
+          "expression": "Affirmative"
+        },
+        "BSL": {
+          "status": "sample",
+          "recorded": false,
+          "videoUri": null,
+          "description": "Two fingers touch ear.",
+          "handshape": "N hand (index and middle) to ear",
+          "movement": "Double tap to ear",
+          "expression": "Neutral affirming"
+        }
+      }
+    }
+  ]
+}
